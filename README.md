@@ -1,42 +1,78 @@
-# Studiesaid.com – Vercel Deploy
+# Studiesaid.com â€” Vercel Deploy Package
 
-## 🚀 Deploy করার পদ্ধতি
+à¦¬à¦¾à¦‚à¦²à¦¾à¦¦à§‡à¦¶à§‡à¦° à¦ªà¦°à§€à¦•à§à¦·à¦¾ à¦ªà§à¦°à¦¸à§à¦¤à§à¦¤à¦¿ à¦¨à§‡à¦Ÿà¦“à¦¯à¦¼à¦¾à¦°à§à¦•à¥¤ à¦à¦•à¦Ÿà¦¿ à¦¹à§‹à¦®à¦ªà§‡à¦œ (Studiesaid.com) + à§¯à¦Ÿà¦¿ à¦ªà§à¦²à§à¦¯à¦¾à¦Ÿà¦«à¦°à§à¦®, à¦¸à¦¬ static HTMLà¥¤
 
-### Option 1: Drag & Drop (সবচেয়ে সহজ)
-1. [vercel.com](https://vercel.com) এ যান
-2. Sign in করুন (GitHub দিয়ে)
-3. Dashboard থেকে **"Add New → Project"** ক্লিক করুন
-4. **"Deploy without a Git repository"** → এই folder (`studiesaid-vercel`) drag করুন
-5. ✅ Done! URL পাবেন
+---
 
-### Option 2: Vercel CLI
+## ðŸ“ à¦«à§‹à¦²à§à¦¡à¦¾à¦° à¦¸à§à¦Ÿà§à¦°à¦¾à¦•à¦šà¦¾à¦° (à¦à¦­à¦¾à¦¬à§‡ à¦¸à¦¾à¦œà¦¾à¦“, à¦¤à¦¾à¦°à¦ªà¦° zip à¦•à¦°à§‹)
+
+```
+studiesaid/
+â”œâ”€â”€ index.html          â† à¦¹à§‹à¦®à¦ªà§‡à¦œ (Studiesaid.com)  â˜… à¦¨à¦¤à§à¦¨
+â”œâ”€â”€ vercel.json         â† à¦°à¦¾à¦‰à¦Ÿà¦¿à¦‚ à¦•à¦¨à¦«à¦¿à¦—            â˜… à¦¨à¦¤à§à¦¨
+â”œâ”€â”€ duadmit.html        â† DUAdmit        (à¦¤à§‹à¦®à¦¾à¦° à¦«à¦¾à¦‡à¦²: duadmit.html)
+â”œâ”€â”€ uniadmit.html       â† UniAdmit       (à¦¤à§‹à¦®à¦¾à¦° à¦«à¦¾à¦‡à¦²: uniadmit.html)
+â”œâ”€â”€ engadmit.html       â† EngAdmit       (à¦¤à§‹à¦®à¦¾à¦° à¦«à¦¾à¦‡à¦²: engadmit.html)
+â”œâ”€â”€ medadmit.html       â† MedAdmit       (à¦¤à§‹à¦®à¦¾à¦° à¦«à¦¾à¦‡à¦²: medadmit.html)
+â”œâ”€â”€ cadreadmit.html     â† CadreAdmit     (à¦¤à§‹à¦®à¦¾à¦° à¦«à¦¾à¦‡à¦²: cadreadmit.html)
+â”œâ”€â”€ bankadmit.html      â† BankAdmit      (à¦¤à§‹à¦®à¦¾à¦° à¦«à¦¾à¦‡à¦²: bankadmit.html)
+â”œâ”€â”€ shikkhokadmit.html  â† ShikkhokAdmit  (à¦¤à§‹à¦®à¦¾à¦° à¦«à¦¾à¦‡à¦²: shikkhokadmit.html)
+â”œâ”€â”€ ieltscore.html      â† IELTScore      (à¦¤à§‹à¦®à¦¾à¦° à¦«à¦¾à¦‡à¦²: ieltscore.html)
+â””â”€â”€ tuitionboard.html   â† à¦Ÿà¦¿à¦‰à¦¶à¦¨ à¦¬à§‹à¦°à§à¦¡    (à¦¤à§‹à¦®à¦¾à¦° à¦«à¦¾à¦‡à¦²: tuitionboard.html)
+```
+
+**à¦—à§à¦°à§à¦¤à§à¦¬à¦ªà§‚à¦°à§à¦£:** à¦«à¦¾à¦‡à¦²à§‡à¦° à¦¨à¦¾à¦®à¦—à§à¦²à§‹ à¦ à¦¿à¦• à¦‰à¦ªà¦°à§‡à¦° à¦®à¦¤à§‹à¦‡ à¦°à¦¾à¦–à¦¤à§‡ à¦¹à¦¬à§‡ (à¦›à§‹à¦Ÿ à¦¹à¦¾à¦¤à§‡à¦° à¦…à¦•à§à¦·à¦°à§‡, à¦à¦•à¦‡ à¦¬à¦¾à¦¨à¦¾à¦¨)à¥¤ à¦¹à§‹à¦®à¦ªà§‡à¦œà§‡à¦° à¦²à¦¿à¦‚à¦•à¦—à§à¦²à§‹ à¦à¦‡ à¦¨à¦¾à¦®à§‡à¦° à¦¸à¦¾à¦¥à§‡ à¦®à§à¦¯à¦¾à¦ª à¦•à¦°à¦¾à¥¤
+
+---
+
+## ðŸ”— à¦°à¦¾à¦‰à¦Ÿ à¦®à§à¦¯à¦¾à¦ª
+
+`vercel.json`-à¦ `cleanUrls` à¦…à¦¨ à¦•à¦°à¦¾, à¦¤à¦¾à¦‡ `.html` à¦›à¦¾à¦¡à¦¼à¦¾à¦‡ à¦•à¦¾à¦œ à¦•à¦°à¦¬à§‡:
+
+| à¦²à¦¿à¦‚à¦• | à¦¯à§‡ à¦«à¦¾à¦‡à¦² à¦–à§‹à¦²à§‡ |
+|------|-------------|
+| `/` | index.html (à¦¹à§‹à¦®à¦ªà§‡à¦œ) |
+| `/duadmit` | duadmit.html |
+| `/uniadmit` | uniadmit.html |
+| `/engadmit` | engadmit.html |
+| `/medadmit` | medadmit.html |
+| `/cadreadmit` | cadreadmit.html |
+| `/bankadmit` | bankadmit.html |
+| `/shikkhokadmit` | shikkhokadmit.html |
+| `/ieltscore` | ieltscore.html |
+| `/tuition` | tuitionboard.html (rewrite) |
+
+---
+
+## ðŸš€ à¦¡à¦¿à¦ªà§à¦²à¦¯à¦¼ à¦•à¦°à¦¾à¦° à¦‰à¦ªà¦¾à¦¯à¦¼
+
+### à¦…à¦ªà¦¶à¦¨ à§§ â€” à¦¡à§à¦°à§à¦¯à¦¾à¦— à¦…à§à¦¯à¦¾à¦¨à§à¦¡ à¦¡à§à¦°à¦ª (à¦¸à¦¬à¦šà§‡à¦¯à¦¼à§‡ à¦¸à¦¹à¦œ)
+1. à¦‰à¦ªà¦°à§‡à¦° à¦¸à¦¬ à¦«à¦¾à¦‡à¦² à¦à¦• à¦«à§‹à¦²à§à¦¡à¦¾à¦°à§‡ à¦°à¦¾à¦–à§‹à¥¤
+2. à¦ªà§à¦°à§‹ à¦«à§‹à¦²à§à¦¡à¦¾à¦°à¦Ÿà¦¾ **zip** à¦•à¦°à§‹à¥¤
+3. [vercel.com/new](https://vercel.com/new) â†’ zip à¦Ÿà¦¾ à¦¡à§à¦°à§à¦¯à¦¾à¦— à¦•à¦°à§‡ à¦›à¦¾à¦¡à¦¼à§‹à¥¤
+4. Deploy à¦šà¦¾à¦ªà§‹à¥¤ à¦¬à§à¦¯à¦¸à¥¤
+
+### à¦…à¦ªà¦¶à¦¨ à§¨ â€” Vercel CLI
 ```bash
 npm i -g vercel
-cd studiesaid-vercel
-vercel
-```
-Follow the prompts — project name, framework: **Other**.
-
-### Option 3: GitHub → Vercel
-1. এই folder-টি GitHub repo-তে push করুন
-2. Vercel-এ "Import Git Repository" করুন
-3. Auto-deploy হবে
-
-## ⚠️ Firebase Config
-`index.html` এর ভেতরে Firebase config যদি placeholder থাকে, তাহলে আসল credentials দিয়ে replace করুন:
-```js
-const firebaseConfig = {
-  apiKey: "YOUR_REAL_KEY",
-  authDomain: "yourapp.firebaseapp.com",
-  projectId: "yourapp",
-  ...
-};
+cd studiesaid
+vercel        # à¦ªà§à¦°à¦¿à¦­à¦¿à¦‰
+vercel --prod # à¦²à¦¾à¦‡à¦­
 ```
 
-## 📁 ফাইল Structure
-```
-studiesaid-vercel/
-├── index.html     ← মূল অ্যাপ
-├── vercel.json    ← Vercel config
-└── README.md
-```
+### à¦…à¦ªà¦¶à¦¨ à§© â€” GitHub
+1. à¦«à§‹à¦²à§à¦¡à¦¾à¦°à¦Ÿà¦¾ GitHub à¦°à¦¿à¦ªà§‹à¦¤à§‡ push à¦•à¦°à§‹à¥¤
+2. Vercel-à¦ "Import Project" â†’ à¦°à¦¿à¦ªà§‹ à¦¸à¦¿à¦²à§‡à¦•à§à¦Ÿà¥¤
+3. Framework Preset: **Other** (à¦•à§‹à¦¨à§‹ à¦¬à¦¿à¦²à§à¦¡ à¦²à¦¾à¦—à¦¬à§‡ à¦¨à¦¾)à¥¤ Deployà¥¤
+
+---
+
+## ðŸŒ à¦¡à§‹à¦®à§‡à¦‡à¦¨ (Studiesaid.com)
+Vercel dashboard â†’ à¦ªà§à¦°à¦œà§‡à¦•à§à¦Ÿ â†’ **Settings â†’ Domains** â†’ `studiesaid.com` à¦…à§à¦¯à¦¾à¦¡ à¦•à¦°à§‹, à¦¤à¦¾à¦°à¦ªà¦° à¦¤à§‹à¦®à¦¾à¦° DNS-à¦ Vercel-à¦à¦° à¦¦à§‡à¦“à¦¯à¦¼à¦¾ à¦°à§‡à¦•à¦°à§à¦¡ à¦¬à¦¸à¦¾à¦“à¥¤
+
+---
+
+## âš ï¸ à¦¨à§‹à¦Ÿ
+- à¦¹à§‹à¦®à¦ªà§‡à¦œà§‡à¦° à¦²à¦—-à¦‡à¦¨/à¦¸à¦¾à¦‡à¦¨-à¦†à¦ª à¦à¦–à¦¨ **à¦¡à§‡à¦®à§‹** (à¦¡à§‡à¦Ÿà¦¾ à¦¬à§à¦°à¦¾à¦‰à¦œà¦¾à¦°à§‡à¦° localStorage-à¦ à¦¥à¦¾à¦•à§‡, à¦¸à¦¾à¦°à§à¦­à¦¾à¦°à§‡ à¦¯à¦¾à¦¯à¦¼ à¦¨à¦¾)à¥¤ à¦†à¦¸à¦² à¦…à¦¥à§‡à¦¨à§à¦Ÿà¦¿à¦•à§‡à¦¶à¦¨ à¦šà¦¾à¦‡à¦²à§‡ Firebase Auth à¦œà§à¦¡à¦¼à§‡ à¦¦à¦¿à¦¤à§‡ à¦¹à¦¬à§‡à¥¤
+- `tuitionboard.html`-à¦ à¦†à¦—à§‡ à¦¥à§‡à¦•à§‡à¦‡ Firebase SDK à¦†à¦›à§‡ â€” à¦“à¦Ÿà¦¾ à¦•à¦¾à¦œ à¦•à¦°à¦¤à§‡ à¦¹à¦²à§‡ Firebase à¦•à¦¨à¦«à¦¿à¦—/à¦•à§€ à¦ à¦¿à¦• à¦¥à¦¾à¦•à¦¤à§‡ à¦¹à¦¬à§‡à¥¤
+- à¦¸à¦¬ static, à¦•à§‹à¦¨à§‹ build step à¦¨à§‡à¦‡, à¦¤à¦¾à¦‡ à¦¡à¦¿à¦ªà§à¦²à¦¯à¦¼ à¦¸à§‡à¦•à§‡à¦¨à§à¦¡à§‡à¦‡ à¦¹à¦¯à¦¼à§‡ à¦¯à¦¾à¦¬à§‡à¥¤
