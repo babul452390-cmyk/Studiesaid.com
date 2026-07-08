@@ -1,8 +1,7 @@
-
 {
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/tuition", "destination": "/tuitionboard.html" }
+    { "source": "/tuition", "destination": "/tutionboard.html" }
   ]
 }
