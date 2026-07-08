@@ -1,7 +1,15 @@
 {
-  "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    { "source": "/tuition", "destination": "/tutionboard.html" }
+    { "source": "/duadmit", "destination": "/duadmit.html" },
+    { "source": "/uniadmit", "destination": "/uniadmit.html" },
+    { "source": "/engadmit", "destination": "/engadmit.html" },
+    { "source": "/medadmit", "destination": "/medadmit.html" },
+    { "source": "/cadreadmit", "destination": "/cadreadmit.html" },
+    { "source": "/bankadmit", "destination": "/bankadmit.html" },
+    { "source": "/shikkhokadmit", "destination": "/shikkhokadmit.html" },
+    { "source": "/ieltscore", "destination": "/ieltscore.html" },
+    { "source": "/tuition", "destination": "/tutionboard.html" },
+    { "source": "/tutionboard", "destination": "/tutionboard.html" }
   ]
 }
