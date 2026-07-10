@@ -10,6 +10,7 @@
     { "source": "/shikkhokadmit", "destination": "/shikkhokadmit.html" },
     { "source": "/ieltscore", "destination": "/ieltscore.html" },
     { "source": "/tuition", "destination": "/tutionboard.html" },
+    { "source": "/openplatform", "destination": "/openplatform.html"}, 
     { "source": "/tutionboard", "destination": "/tutionboard.html" }
   ]
 }
