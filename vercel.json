@@ -1,72 +1,30 @@
 {
   "trailingSlash": false,
   "rewrites": [
-    {
-      "source": "/duadmit",
-      "destination": "/duadmit.html"
-    },
-    {
-      "source": "/uniadmit",
-      "destination": "/uniadmit.html"
-    },
-    {
-      "source": "/engadmit",
-      "destination": "/engadmit.html"
-    },
-    {
-      "source": "/medadmit",
-      "destination": "/medadmit.html"
-    },
-    {
-      "source": "/cadreadmit",
-      "destination": "/cadreadmit.html"
-    },
-    {
-      "source": "/bankadmit",
-      "destination": "/bankadmit.html"
-    },
-    {
-      "source": "/shikkhokadmit",
-      "destination": "/shikkhokadmit.html"
-    },
-    {
-      "source": "/ieltscore",
-      "destination": "/ieltscore.html"
-    },
-    {
-      "source": "/tuition",
-      "destination": "/tutionboard.html"
-    },
-    {
-      "source": "/openplatform",
-      "destination": "/openplatform.html"
-    },
-    {
-      "source": "/tutionboard",
-      "destination": "/tutionboard.html"
-    }
+    { "source": "/duadmit", "destination": "/duadmit.html" },
+    { "source": "/uniadmit", "destination": "/uniadmit.html" },
+    { "source": "/engadmit", "destination": "/engadmit.html" },
+    { "source": "/medadmit", "destination": "/medadmit.html" },
+    { "source": "/cadreadmit", "destination": "/cadreadmit.html" },
+    { "source": "/bankadmit", "destination": "/bankadmit.html" },
+    { "source": "/shikkhokadmit", "destination": "/shikkhokadmit.html" },
+    { "source": "/ieltscore", "destination": "/ieltscore.html" },
+    { "source": "/tuition", "destination": "/tutionboard.html" },
+    { "source": "/openplatform", "destination": "/openplatform.html" },
+    { "source": "/tutionboard", "destination": "/tutionboard.html" }
   ],
   "functions": {
-    "api/*.js": {
-      "runtime": "nodejs20.x"
-    }
+    "api/approve-payment.js": { "runtime": "nodejs20.x" },
+    "api/get-video-token.js": { "runtime": "nodejs20.x" },
+    "api/verify-enrollment.js": { "runtime": "nodejs20.x" }
   },
   "headers": [
     {
       "source": "/api/(.*)",
       "headers": [
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        },
-        {
-          "key": "Access-Control-Allow-Methods",
-          "value": "GET,POST,OPTIONS"
-        },
-        {
-          "key": "Access-Control-Allow-Headers",
-          "value": "Content-Type, Authorization"
-        }
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET,POST,OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization" }
       ]
     }
   ]
